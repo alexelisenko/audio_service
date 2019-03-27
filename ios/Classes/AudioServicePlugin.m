@@ -1,11 +1,11 @@
-#import "AudioservicePlugin.h"
+#import "AudioServicePlugin.h"
 
-@implementation AudioservicePlugin
+@implementation AudioServicePlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"audio_service"
             binaryMessenger:[registrar messenger]];
-  AudioservicePlugin* instance = [[AudioservicePlugin alloc] init];
+  AudioServicePlugin* instance = [[AudioservicePlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 
