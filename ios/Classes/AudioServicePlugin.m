@@ -1,4 +1,4 @@
-#import "AudioservicePlugin.h"
+#import "AudioServicePlugin.h"
 
 @implementation AudioServicePlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
