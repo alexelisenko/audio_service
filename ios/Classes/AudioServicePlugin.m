@@ -5,7 +5,7 @@
   FlutterMethodChannel* channel = [FlutterMethodChannel
       methodChannelWithName:@"audio_service"
             binaryMessenger:[registrar messenger]];
-  AudioServicePlugin* instance = [[AudioservicePlugin alloc] init];
+  AudioServicePlugin* instance = [[AudioServicePlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 
